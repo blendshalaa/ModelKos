@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import '../styles/Navbar.scss';
@@ -17,7 +16,7 @@ function Navbar() {
         <p className='logotitle'>MODELKOS</p>
       </div>
 
-      <button className='hamburger-menu' onClick={toggleMobileMenu}>
+      <button className={`hamburger-menu ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
         ☰
       </button>
 
