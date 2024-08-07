@@ -1,0 +1,187 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  
+    .logo {
+      display: flex;
+      align-items: center;
+  
+      .logoimg {
+        height: 50px; 
+      }
+  
+      .logotitle {
+        padding-left: 10px;
+        font-size: 26px;
+      }
+    }
+  
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+  
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+  
+        .nav-item {
+          list-style: none;
+          color: black;
+          font-size: 16px;
+  
+          a {
+            color: black;
+            text-decoration: none;
+          }
+  
+          .dropdown-arrow {
+            padding-left: 10px;
+           
+          }
+        }
+      }
+    }
+  
+    .nav-buttons {
+      display: flex;
+      gap: 50px;
+  
+      .apply-button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+  
+      .contact-button {
+        background-color: #1D1D1D;
+        color: white;
+        width: 138px;
+        height: 49px;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+    }
+  
+    .hamburger-menu {
+      display: none; 
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: black;
+      cursor: pointer;
+    }
+
+    @media (max-width: 1440px) {
+        .logo .logotitle {
+            font-size: 20px;
+          }
+      
+          .nav-menu ul {
+            gap: 20px;
+          }
+      
+          .nav-item {
+            font-size: 16px;
+          }
+      
+          .contact-button {
+            width: 120px;
+            height: 40px;
+          }
+      }
+
+    @media(max-width:1024px){
+        .logo .logotitle {
+            font-size: 20px;
+          }
+      
+          .nav-menu ul {
+            gap: 20px;
+          }
+      
+          .nav-item {
+            font-size: 16px;
+          }
+      
+          .contact-button {
+            width: 120px;
+            height: 40px;
+          }
+        
+    }
+  
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+  
+      .nav-menu {
+        width: 100%;
+        display: none; 
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: white;
+        margin-top: 50px;
+        overflow: hidden;
+     
+       
+  
+        &.open {
+          display: block;
+        }
+  
+        ul {
+          flex-direction: column;
+          gap: 20px;
+          padding: 0;
+          margin: 0;
+        
+        }
+  
+        .nav-item {
+          font-size: 18px; 
+        }
+      }
+  
+      .nav-buttons {
+        display: none; 
+      }
+  
+      .hamburger-menu {
+        display: block; 
+      }
+    }
+    
+
+  @media (max-width: 480px) {
+    .logo .logotitle {
+      font-size: 20px;
+    }
+
+    .nav-menu ul {
+      gap: 10px;
+    }
+
+    .nav-item {
+      font-size: 16px;
+    }
+
+    .contact-button {
+      width: 120px;
+      height: 40px;
+    }
+  }
+  }
+  
