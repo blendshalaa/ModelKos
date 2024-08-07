@@ -1,0 +1,121 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -550px; /* Hidden off-screen */
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (top) */
+    padding: 10px; /* Padding around the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease;
+  
+    &.open {
+      left: 0; /* Slide in */
+    }
+  
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 2.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .logo {
+      display: flex;
+      align-items: center; /* Align logo items horizontally */
+      margin-bottom: 20px;
+      width: 100%; /* Full width for logo container */
+  
+      .logoimg {
+        height: 40px;
+      }
+  
+      .logotitle {
+        font-size: 24px;
+        margin-left: 10px; /* Space between logo image and title */
+      }
+    }
+  
+    .nav-menu {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Align nav-menu items to the start (top) */
+      overflow-y: auto;
+      width: 100%; /* Full width for the nav-menu */
+  
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%; /* Full width for the list */
+  
+        .nav-item {
+          font-size: 20px;
+          margin: 15px 0;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding-left: 10px;
+          position: relative; 
+          padding-bottom: 10px; 
+  
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            width: 100%; /* Full width for border */
+            border-bottom: 2px solid #ddd; /* Full-width border */
+          }
+  
+          a {
+            color: black;
+            text-decoration: none;
+            display: block; 
+            width: 100%; 
+          }
+        }
+  
+     
+      }
+    }
+  
+    .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+      align-items: center; /* Center content horizontally */
+      gap: 10px;
+      margin-top: auto; 
+      width: 100%; 
+      padding-bottom: 150px; 
+  
+      .apply-button {
+        border: none;
+        background-color: transparent;
+        width: 150px;
+        cursor: pointer;
+        text-align: center;
+        padding: 10px;
+      }
+  
+      .contact-button {
+        background-color: #1D1D1D;
+        color: white;
+        width: 150px; /* Full width for button */
+        height: 35px;
+        border-radius: 20px;
+        cursor: pointer;
+        text-align: center;
+        padding: 5px 0; /* Center text vertically */
+      }
+    }
+  }
+  

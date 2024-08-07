@@ -1,14 +1,20 @@
-/* eslint-disable no-unused-vars */
-import React from 'react'
-import '../styles/HomePage.scss'
-import Navbar from '../components/Navbar'
+import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/SideBar';
 
 function HomePage() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div>
-      <Navbar/>
+      <Navbar toggleSidebar={toggleSidebar} />
+      <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;

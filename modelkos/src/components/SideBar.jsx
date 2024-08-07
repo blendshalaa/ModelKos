@@ -2,11 +2,14 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import logo from '../assets/logo.png'; // Adjust the path if needed
-import '../styles/Navbar.scss';
+import '../styles/SideBar.scss';
 
-function Navbar({ toggleSidebar }) {
+function Sidebar({ isOpen, onClose }) {
   return (
-    <div className='navbar'>
+    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+      <button className='close-btn' onClick={onClose}>
+        &times;
+      </button>
       <div className='logo'>
         <img className='logoimg' src={logo} alt='logo' />
         <p className='logotitle'>MODELKOS</p>
@@ -38,17 +41,12 @@ function Navbar({ toggleSidebar }) {
           </li>
         </ul>
       </div>
-
       <div className='nav-buttons'>
         <button className='apply-button'>Apply Now</button>
         <button className='contact-button'>Contacts</button>
       </div>
-
-      <button className='hamburger-menu' onClick={toggleSidebar}>
-        ☰
-      </button>
     </div>
   );
 }
+export default Sidebar
 
-export default Navbar;
