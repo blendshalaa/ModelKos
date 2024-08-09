@@ -7,7 +7,7 @@ function HeroSection() {
     <>
     <div className='main-hero'>
         <div className='text-rotate'>
-          
+          <h1>TEST</h1>
         </div>
         
     </div>

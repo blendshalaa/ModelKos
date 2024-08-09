@@ -1,0 +1,35 @@
+.circular-text-container {
+    width: 200px;
+    height: 200px;
+   
+  }
+  
+  .circular-text-svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  text {
+    font-size: 12px; /* Adjust font size as needed */
+    letter-spacing: 1px; /* Adjust letter spacing as needed */
+    text-transform: uppercase; /* Optional: transform text to uppercase */
+  }
+  .circular-text {
+    font-size: 10px; /* Adjust font size as needed */
+    letter-spacing: 1px; /* Adjust letter spacing as needed */
+    text-transform: uppercase; /* Optional: transform text to uppercase */
+    fill: #ffff; /* Change the text color here */
+  }  
+
+
+@media (max-width: 1024px) {
+  .circular-text {
+    font-size: 2.5vw; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .circular-text {
+    font-size: 2vw; /* Further adjust for smaller screens */
+  }
+}

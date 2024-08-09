@@ -1,0 +1,329 @@
+.footer {
+  background-color: #1D1D1D;
+  margin-top: 120px;
+  padding: 0 50px;
+}
+
+.text-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  gap: 100px;
+  color: #dddddd1d;
+}
+
+.modeltext-footer {
+  font-size: 100px;
+}
+
+.imgfo {
+  color: white;
+  background-color: white;
+  width: 100px;
+}
+
+.footer-lists {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 100px;
+  gap: 110px;
+  padding-left: 50px;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-list li {
+  margin-bottom: 30px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer-list a:hover {
+  color: #838384;
+}
+
+.rightfooter {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  border-left: 1px solid white;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.models, .modelmanagement {
+  flex: 1;
+  margin-right: 30px;
+  color: white;
+}
+
+.modelmanagement {
+  margin-right: 0;
+}
+
+.jobs {
+  color: white;
+}
+
+.models p, .modelmanagement p, .jobs p {
+  margin: 0 0 10px;
+}
+
+.jobs p {
+  margin-bottom: 0;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  margin-top: 120px;
+  border-top: 2px solid #c0c0c0dd;
+}
+
+.logofooter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.logoimgf {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.logotitlefooter {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mid-section-footer {
+  display: flex;
+  align-items: center;
+}
+
+.mid-section-footer p {
+  margin-right: 10px;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons img {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.language img {
+  width: 24px;
+  height: 24px;
+}
+
+.language p {
+  margin: 0 8px;
+  font-size: 16px;
+}
+
+.number {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 0 30px;
+  }
+  .text-footer {
+    gap: 50px;
+  }
+  .footer-lists {
+    gap: 50px;
+  }
+  .rightfooter {
+    padding-left: 50px;
+  }
+  .footer-end {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 0 20px;
+  }
+  .text-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+    color: #dddddd1d;
+  }
+  .modeltext-footer {
+    font-size: 40px;
+    text-align: center;
+  }
+  .footer-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+  }
+  .footer-list {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-list-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+  }
+  .footer-list li {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .rightfooter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+    gap: 30px;
+    width: 100%;
+  }
+  .footer-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    gap: 20px;
+    border-top: 2px solid #c0c0c0dd;
+    width: 100%;
+  }
+  .logofooter {
+    margin-bottom: 20px;
+  }
+  .mid-section-footer {
+    margin-bottom: 20px;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+  }
+  .icons img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0 10px;
+  }
+  .text-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .modeltext-footer {
+    font-size: 30px;
+    text-align: center;
+  }
+  .footer-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 0;
+  }
+  .footer-list {
+    width: 100%;
+    text-align: center;
+  }
+  .rightfooter {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    border: none;
+    border-top: 1px solid white;
+    padding: 30px 0;
+  }
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-end {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border: none;
+  }
+  .models {
+    margin: 0;
+    padding: 10px;
+  }
+  .models p, .modelmanagement p, .jobs p {
+    margin-bottom: 15px;
+  }
+  .footer-end {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    gap: 20px;
+  }
+  .logofooter {
+    margin-bottom: 20px;
+  }
+  .mid-section-footer {
+    margin-bottom: 20px;
+  }
+  .icons {
+    gap: 15px;
+  }
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+}
